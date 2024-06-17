@@ -1,0 +1,15 @@
+#include <iostream>
+#include <string>
+
+int main() {
+    std::string correctText;
+    std::string textToCompare;
+
+    std::getline(std::cin, correctText);
+    std::getline(std::cin, textToCompare);
+
+    bool areEqual = (correctText == textToCompare);
+    std::cout << std::boolalpha << areEqual << std::endl;
+
+    return 0;
+}
